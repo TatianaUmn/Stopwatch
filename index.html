@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        .container {
+          text-align: center;
+          padding: 20px;
+        }
+        .timer {
+          font-size: 48px;
+        }
+        .controls {
+          margin-top: 20px;
+        }
+        button {
+          font-size: 18px;
+          padding: 10px 20px;
+          margin: 0 5px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Секундомер</h1>
+        <div class="timer" id="timer">00:00:00</div>
+        <div class="controls">
+          <button onclick="startStopwatch()">Старт</button>
+          <button onclick="pauseStopwatch()">Пауза</button>
+          <button onclick="resumeStopwatch()">Продолжить</button>
+          <button onclick="stopStopwatch()">Стоп</button>
+        </div>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
